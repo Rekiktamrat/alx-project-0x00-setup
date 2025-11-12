@@ -1,28 +1,37 @@
+import Card from "@/components/Card";
 import Button from "@/components/Button";
 
-const Landing: React.FC = () => {
+const Landing: React.FC =  () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen gap-6">
-      <h1 className="text-2xl font-semibold">Landing Page</h1>
-
-      <div className="flex flex-wrap gap-4">
+    <>
+    <div>
+      <h1 className=" text-xl font-extralight">Landing Page</h1>
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+            <div className="flex flex-wrap gap-4">
         {/* Small Buttons */}
-        <Button title="Small Rounded" styles="text-sm rounded-sm" />
-        <Button title="Small Medium" styles="text-sm rounded-md" />
-        <Button title="Small Large" styles="text-sm rounded-lg" />
+        <Button title="Small Rounded-sm" styles="px-3 py-1 text-sm rounded-sm" />
+        <Button title="Small Rounded-md" styles="px-3 py-1 text-sm rounded-md" />
+        <Button title="Small Rounded-lg" styles = "px-3 py-1 text-sm rounded-lg"/>
+        <Button title="Small Rounded-full" styles="px-3 py-1 text-sm rounded-full" />
 
         {/* Medium Buttons */}
-        <Button title="Medium Rounded" styles="text-base rounded-sm" />
-        <Button title="Medium Medium" styles="text-base rounded-md" />
-        <Button title="Medium Large" styles="text-base rounded-lg" />
+        <Button title="Medium Rounded-sm" styles="px-4 py-2 text-base rounded-sm" />
+        <Button title="Medium Rounded-md" styles="px-4 py-2 text-base rounded-md" />
+        <Button title = "Medium Rounded-lg" styles = "px-4 py-2 text-base rounded-lg" />
+        <Button title="Medium Rounded-full" styles="px-4 py-2 text-base rounded-full" />
 
         {/* Large Buttons */}
-        <Button title="Large Rounded" styles="text-lg rounded-sm px-6 py-3" />
-        <Button title="Large Medium" styles="text-lg rounded-md px-6 py-3" />
-        <Button title="Large Large" styles="text-lg rounded-lg px-6 py-3" />
+        <Button title="Large Rounded-sm" styles="px-6 py-3 text-lg rounded-sm" />
+        <Button title="Large Rounded-md" styles="px-6 py-3 text-lg rounded-md" />
+        <Button title = "Large Rounded-lg" styles = "px-6 py-3 text-lg rounded-lg" /> 
+        <Button title="Large Rounded-full" styles="px-6 py-3 text-lg rounded-full" />
       </div>
-    </div>
-  );
-};
 
-export default Landing;
+    </div>
+    </>
+  )
+}
+export default Landing
